@@ -1,5 +1,5 @@
-# Mixed Tape Using Genetic Algorithm 
-Create a mixed tape using Genetic Algorithms with Python DEAP library. 
+# Paylist Generation Using Genetic Algorithm 
+Create a playlist using Genetic Algorithms with Python DEAP library. 
 
 ## Genetic Algorithms
 1. Create a random initial *population*
