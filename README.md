@@ -40,8 +40,8 @@ from pydub import AudioSegment
 
 1. Collect all the music file into a folder.
 2. Change the code according to the structure of your folder.
-3. Run the *[preprocess.py]*().
-4. Run the *[playlist_GA.py]*().
+3. Run the *[preprocess.py](https://github.com/ani-poroorkara/PlaylistGenerator-using-Genetic-Algorithm/blob/master/preprocess.py)*.
+4. Run the *[playlist_GA.py](https://github.com/ani-poroorkara/PlaylistGenerator-using-Genetic-Algorithm/blob/master/playlist_GA.py)*.
 
 
 ## License
