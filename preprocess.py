@@ -82,6 +82,6 @@ If not present, remove those cells.
 # Save the data in a pickle file as a dictionary 
 import pickle
 
-pickle.dump(data, open( "data_music.pkl", "wb" ) 
+pickle.dump(data, open("data_music.pkl", "wb"))
 
 print("End of processing :)")
