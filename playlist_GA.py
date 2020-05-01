@@ -1,7 +1,6 @@
 # Load the data as a dictionary
-
 import pickle
-data = pickle.load( open( "dataSave.pkl", "rb" ) 
+data = pickle.load(open("dataSave.pkl", "rb")) 
 
 
 """
@@ -76,6 +75,7 @@ toolbox.register("evaluate", information_evaluation)
 toolbox.register("mate", tools.cxOnePoint)
 toolbox.register("select", tools.selNSGA2)
 
+
 """
 Check working of the toolbox.
 
@@ -84,6 +84,7 @@ Check working of the toolbox.
 # print(individual)
 # print(result)
 """
+
 
 """
 Run the generation
@@ -95,14 +96,14 @@ deap.algorithms.eaMuPlusLambda(population,
                                 probability of mutation, 
                                 num of generations, 
                                 halloffame)
-
-
 """
+
 print("Start Generation.")
 pop = toolbox.population(n = 20)
 hof = tools.ParetoFront()
 algorithms.eaMuPlusLambda(pop, toolbox, 20, 20, 0.5, 0, 20, halloffame = hof, verbose = False)
 print("Populations Generated.")
+
 
 """
 The best population can be accessed the first list in hall of fame. 
@@ -110,6 +111,7 @@ Here, you can generate
   1. A text file containing the playlist names.  
   2. Create a record with all the music files merged 
 """
+
 bestlist = hof[0]
 
 print("Creating playlist.txt file")
@@ -119,9 +121,7 @@ for s in bestlist:
 playlist_file.close()
 print("File saved.")
 
-
 from pydub import AudioSegment
-
 print("Generating RECORD.mp3 with best population.")
 num = 1
 for s in bestlist:
