@@ -1,6 +1,9 @@
 # Load the data as a dictionary
+
+print("Loading data....")
 import pickle
 data = pickle.load(open("dataSave.pkl", "rb")) 
+print("Done!")
 
 
 """
@@ -78,7 +81,6 @@ toolbox.register("select", tools.selNSGA2)
 
 """
 Check working of the toolbox.
-
 # individual = toolbox.playlist()
 # result = information_evaluation(individual)
 # print(individual)
