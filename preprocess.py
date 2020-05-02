@@ -10,6 +10,7 @@ This is needed to find the songs and extract their features.
 """
 import os
 
+print("Collecting all files...")
 datacount = 0
 songs = []
 for file in os.listdir('MusicFiles'):
@@ -64,6 +65,7 @@ def feature_Extraction(song):
       stat = {}
   return stat
 
+print("Extracting music features....")
 data = {}
 count = 0
 for song in songs:
@@ -71,7 +73,7 @@ for song in songs:
   print("#"*10, end = '')
   count +=1
   print(count)
-
+print("Done!")
 
 """
 Save the dictionary as a pickle file.
@@ -81,7 +83,8 @@ If not present, remove those cells.
 
 # Save the data in a pickle file as a dictionary 
 import pickle
-
+print("Exporting Data....")
 pickle.dump(data, open("data_music.pkl", "wb"))
+print("Done!")
 
 print("End of processing :)")
