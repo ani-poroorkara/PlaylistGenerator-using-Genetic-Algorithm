@@ -111,7 +111,7 @@ print("Populations Generated.")
 The best population can be accessed the first list in hall of fame. 
 Here, you can generate
   1. A text file containing the playlist names.  
-  2. Create a record with all the music files merged 
+  2. Create a record with all the music files merged.
 """
 
 bestlist = hof[0]
@@ -138,4 +138,4 @@ for s in bestlist:
 print("DONE!")
 print("Exporting record...(will take time depending on number of songs)")
 record.export("Record.mp3", format="mp3")
-print("Exported Record.")
+print("Record Exported.")
