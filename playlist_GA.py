@@ -100,7 +100,7 @@ deap.algorithms.eaMuPlusLambda(population,
                                 halloffame)
 """
 
-print("Start Generation.")
+print("Starting Generation....")
 pop = toolbox.population(n = 20)
 hof = tools.ParetoFront()
 algorithms.eaMuPlusLambda(pop, toolbox, 20, 20, 0.5, 0, 20, halloffame = hof, verbose = False)
@@ -116,7 +116,7 @@ Here, you can generate
 
 bestlist = hof[0]
 
-print("Creating playlist.txt file")
+print("Creating playlist.txt file .... ")
 playlist_file = open("playlist.txt","w+")
 for s in bestlist:
   playlist_file.write(s + "\n")
@@ -124,7 +124,7 @@ playlist_file.close()
 print("File saved.")
 
 from pydub import AudioSegment
-print("Generating RECORD.mp3 with best population.")
+print("Generating RECORD.mp3 with best population....")
 num = 1
 for s in bestlist:
   m = 'MusicFiles/' + s
