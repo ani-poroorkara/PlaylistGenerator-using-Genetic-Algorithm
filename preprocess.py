@@ -81,6 +81,23 @@ Before saving the dictionary, do check if all feature values are present in the 
 If not present, remove those cells. 
 """
 
+print("Checking for null feature values....")
+dellist = []
+for i in data:
+  try: 
+    c = data[i]['bpm']
+    c = data[i]['loudness']
+    c = data[i]['dissonance']
+    c = data[i]['tonal_key']
+  except:
+    dellist.append(i)
+if (len(dellist)> 0):
+  print("Removing cells with null feature values....")
+  for i in dellist:
+    del data[i]
+print("Done!")
+    
+ 
 # Save the data in a pickle file as a dictionary 
 import pickle
 print("Exporting Data....")
