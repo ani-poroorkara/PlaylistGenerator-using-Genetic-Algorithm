@@ -1,4 +1,4 @@
-# Paylist Generation Using Genetic Algorithm 
+# Playlist Generation Using Genetic Algorithm 
 Create a playlist using Genetic Algorithms with Python DEAP library. 
 
 ## Genetic Algorithms
