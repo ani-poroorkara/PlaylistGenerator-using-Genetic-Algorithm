@@ -1,4 +1,12 @@
 # Playlist Generation Using Genetic Algorithm 
+
+## v2.0
+### Features 
+1. Add an interactive page that can be run. 
+2. Interactive UI. 
+3. Amazing Experience. 
+
+## v1.0-Final
 Create a playlist using Genetic Algorithms with Python DEAP library. 
 This model can generate a playlist taking your music files as input and generate either a text file containing the list or merge the entire list into a single music track. 
 
